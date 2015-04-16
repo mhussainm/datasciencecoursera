@@ -1,4 +1,4 @@
-## Overall the goal of the following two functions 'makeCacheMatrix' and 'cacheSolve'
+# Overall the goal of the following two functions 'makeCacheMatrix' and 'cacheSolve'
 # is to allow caching of matrix inverses evaluated using 'solve', thus
 # reducing processing resources when matrix inverses evaluated earlier 
 # are required to be used.
@@ -18,7 +18,7 @@
 # inverse of the matrix and sets the value of the inverse in the cache via 
 # the `setmean` function.
 
-## 'makeCacheMatrix': Use to create a special 'matrix' which can cache the
+# 'makeCacheMatrix': Use to create a special 'matrix' which can cache the
 # inverse of itself for future use
 
 makeCacheMatrix <- function(x = matrix()) {
@@ -36,7 +36,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## 'cacheSolve': Use to perform the caching of the special 'matrix'
+# 'cacheSolve': Use to perform the caching of the special 'matrix'
 # created using the 'makeCacheMatrix' function
 
 cacheSolve <- function(x, ...) {
